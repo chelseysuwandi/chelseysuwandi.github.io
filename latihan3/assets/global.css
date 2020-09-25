@@ -1,0 +1,158 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+
+.kotak {
+  max-width: 1200px;
+  max-height: 2000px;
+  width: 100%;
+  border-style: solid;
+  border-width: 1px;
+}
+
+.kotakjudul{
+	width: 372px;
+	height: 50px;
+	background-color: grey;
+	margin-left: 50px;
+	margin-bottom: 10px;
+}
+
+.judul{
+	padding-top: 10px;
+	font-size: 20px;
+	color: white;
+	margin-left: 50px;
+	margin-bottom: 20px;
+}
+
+.judul2{
+	margin-top: 120px;
+	margin-left: 50px;
+	color: #32CD32;
+}
+
+.garis {
+	width: 300px;
+	margin-left: 50px;
+	color: #32CD32;
+}
+
+.garis2 {
+	width: 300px;
+	color: grey;
+	margin-bottom: 5px;
+}
+
+.teksijo{
+	margin-top: 10px;
+	margin-left: 50px;
+	color: #32CD32;
+}
+
+.teksijo2 {
+	margin-top: 10px;
+	margin-left: 80px;
+	color: #32CD32;
+	display: inline-block;
+}
+
+.kananijo {
+	display: inline-block;
+}
+
+.bawahijo {
+	margin-top: 5px;
+	margin-left: 80px;
+}
+
+.infocentre {
+	margin-left: 70px;
+}
+
+
+.isiteksijo {
+	margin-top: 5px;
+	margin-left: 50px;
+}
+
+.kananatas {
+	float: right;
+	margin-top: -570px;
+	margin-right: 100px;
+}
+
+.kananbawah {
+	float: right;
+	margin-top: -350px;
+	margin-right: -60px;
+}
+
+.angka80 {
+	margin-bottom: 20px;
+	margin-top: 10px;
+	margin-right: 20px;
+	font-size: 30px;
+	font-weight: bold;
+	display: inline-block;
+}
+
+.angka42 {
+	font-size: 100px;
+	font-weight: strong;
+}
+
+.kotak2 {
+	width: 200px;
+	height: 75px;
+	border-radius: 10px;
+	background-color: pink;
+	margin-left: -50px;
+}
+
+.isikotak2 {
+	padding-left: 10px;
+	padding-top: 10px;
+}
+
+.isiroutes {
+	margin-top: -100px;
+	display: inline-block;
+}
+
+.gambar {
+	margin-left: 90px;
+	width: 5%;
+	display: inline-block;
+}
+
+body {
+	font-family: sans-serif;
+}
+
+
+table {
+	margin-left: 50px;
+	position: fixed;
+	border: 1px solid grey;
+	border-collapse: collapse;
+}
+
+thead {
+	background-color: grey;
+	color: white;
+	
+	margin: 0px;
+}
+
+th{
+	font-weight: normal;
+	padding-left: 10px;
+	padding-right: 50px;
+}
+thead, tr, th{
+	border: 1px solid #D3D3D3;
+
+}
+
