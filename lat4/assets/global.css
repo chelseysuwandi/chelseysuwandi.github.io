@@ -1,0 +1,52 @@
+.column {
+  float: left;
+  width: 100%;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+h1 {
+   font-family: 'Oswald', sans-serif; 
+}
+
+h2{
+	font-family: 'Oswald', sans-serif;
+}
+
+b{
+	font-family: 'Oswald', sans-serif; 
+}
+
+em{
+	color: gray;
+}
+
+a{
+	text-decoration: none;
+	color: black
+}
+
+button{
+	padding: 20px;
+	margin-bottom: 20px;
+}
+
+table{
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+@media(max-width:340px){
+	.column{
+		text-align: justify;
+	}
+	br{
+		margin-bottom: 5px;
+	}
+	table{
+		font-size: 14px;
+		margin-left: -5px;
+	}
+	button{
+		padding: 15px;
+	}
+}
