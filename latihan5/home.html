@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <script src="js/jquery.min.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<!-- <header>
+    <ul>
+        <li><a class="active" href="#home">HOME</a></li>
+        <li><a href="aboutus.html">ABOUT US</a></li>
+        <li><a href="getting.html">GET INVOLVED</a></li>
+        <li><a href="#contact">EVENTS</a></li>
+        <li><a href="#about">MATERIALS</a></li>
+        <li><a href="#contact">FILM FESTIVAL</a></li>
+        <li><a href="#about">MESSAGES</a></li>
+        <li><a href="#about">MEDIA</a></li>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            
+        </a>
+      </ul>
+</header> -->
+<body>
+    <div class="topnav" id="myTopnav">
+        <a href=""></a>
+        <a href="home.html">HOME</a>
+        <a href="aboutus.html">ABOUT US</a>
+        <a href="getting.html">GET INVOLVED</a>
+        <a href="#">EVENTS</a>
+        <a href="#">MATERIALS</a>
+        <a href="#">FILM FESTIVAL</a>
+        <a href="#">MESSAGES</a>
+        <a href="#">MEDIA</a>
+        <a href="javascript:void(0);" class="icon" onclick="Funnav()" style="padding:10px;margin:0;">
+            <img src="img/logo.png" alt="" srcset="" style="height:53px;padding:0;margin:0;display:block;">
+        </a>
+    </div>
+    <div class="body">
+            <a href="aboutus.html"><img src="img/Home.png" alt="" style="width:100%;"></a><br><br>
+            <a href="man.html"><img src="img/1.jpg" alt=""style="width:50%; margin-left:25%;"><br></a>
+            <div style="font-size: 200%; text-align: center; color: #d5dbd6;">ANTÓNIO GUTERRES SECRETARY</div>
+            <div style="font-size: 200%; text-align: center; color: #d5dbd6;">GENERAL UNITED NATIONS</div>
+            <div style="font-size: 150%; text-align: center; color: #dce2e8; margin: 6%;"><p>Humanity is an inextricable part of the rich tapestry of life that makes up our world’s biological diversity. All human civilizations have been and continue to be built on the use of wild and cultivated species of flora and fauna, from the food we eat to the air we breathe.</p></div><br><br>            
+            <a href="woman.html"><img src="img/2.jpg" alt=""style="width:50%; margin-left:25%;"><br></a> 
+            <div style="font-size: 200%; text-align: center; color: #d5dbd6;">IVONNE HIGUERO SECRETARY</div>
+            <div style="font-size: 200%; text-align: center; color: #d5dbd6;">GENERAL CITES SECRETARIAT</div>
+            <div style="font-size: 150%; text-align: center; color: #dce2e8; margin: 6%;"><p>We are extremely fortunate to count on the presence of an endless diversity of wild animals, plants, and other lifeforms that together make up life on our planet.</p></div><br><br>
+            <div style="font-size: 200%; text-align: center; color: #d5dbd6;">Partners</div><br><br><br>
+            <div style="margin-left: 5%; ">
+                <img src="img/logo1.png" style="margin-left: 10%; width:20%;">
+                <img src="img/logo2.png" style="margin-left: 10%; width:20%;">
+                <img src="img/logo3.png" style="margin-left: 10%; width:20%;"><br><br><br><br><br>
+            </div>
+            <hr style="margin:10%;">
+            <div style="font-size: 160%; text-align: center; color: #d5dbd6;">This site is managed by the CITES Secretariat | <br> Designed by Chelsey Suwandi| Chelsey.com</div>
+            <br>
+    </div>
+</body>
+</html>
+
+<script type="text/javascript">
+    var anim;
+    var opn = false;
+    $(document).ready(function(){
+        $('.menu').on('click', function(e){
+            opn ^= true;
+            if(opn){
+                $('.mask').css('z-index', '2');
+                clearInterval(anim);
+                anim = setInterval(() => {
+                    var i = parseInt($('.nav-menu').css('margin-left'));
+                    i = (4 * i - 207) / 5;
+                    if(- 207 - i < 5){
+                        $('.nav-menu').css('margin-left', '-207px');
+                        $('.content').css('opacity', "0");
+                    }
+                    $('.nav-menu').css('margin-left', i + 'px');
+                    var p = 1 - (621 + i) / (621 - 207);
+                    $('.content').css('opacity', p + "");
+                }, 20);
+            }else{
+                clearInterval(anim);
+                anim = setInterval(() => {
+                    var i = parseInt($('.nav-menu').css('margin-left'));
+                    i = (4 * i - 626) / 5;
+                    if(i + 626 < 5){
+                        $('.nav-menu').css('margin-left', '-621px');
+                        $('.mask').css('z-index', '-1');
+                        $('.content').css('opacity', "1");
+                    }
+                    $('.nav-menu').css('margin-left', i + 'px');
+                    var p = 1 - (621 + i) / (621 - 207);
+                    $('.content').css('opacity', p + "");
+                }, 20);
+            }
+            
+        });
+    });
+
+    function Funnav() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+            x.className += " responsive";
+        } else {
+            x.className = "topnav";
+        }
+    }
+</script>
